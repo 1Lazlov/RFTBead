@@ -1,4 +1,4 @@
-package com.example.fnk.rftbead.MyClasses;
+package com.example.fnk.rftbead.MyClassesRanked;
 
 import java.util.List;
 

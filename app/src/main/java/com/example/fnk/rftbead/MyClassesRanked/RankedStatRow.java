@@ -1,4 +1,4 @@
-package com.example.fnk.rftbead.MyClasses;
+package com.example.fnk.rftbead.MyClassesRanked;
 
 /**
  * Created by Főnök on 2015.12.30..

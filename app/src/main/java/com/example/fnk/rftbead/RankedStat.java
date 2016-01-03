@@ -6,8 +6,8 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.fnk.rftbead.MyClasses.RankedStatRow;
-import com.example.fnk.rftbead.MyClasses.RankedStatRowCalculator;
+import com.example.fnk.rftbead.MyClassesRanked.RankedStatRow;
+import com.example.fnk.rftbead.MyClassesRanked.RankedStatRowCalculator;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

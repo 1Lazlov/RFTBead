@@ -27,6 +27,10 @@
             android:name=".RankedStat"
             android:label="@string/title_activity_ranked_stat" >
         </activity>
+        <activity
+            android:name=".SummaryStatActivity"
+            android:label="@string/title_activity_summary_stat" >
+        </activity>
     </application>
 
 </manifest>
