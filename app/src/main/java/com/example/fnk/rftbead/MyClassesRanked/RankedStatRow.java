@@ -35,27 +35,44 @@ public class RankedStatRow
     private  int totalAssists;
     private  int totalChampionKills;
     private  int totalFarm;
+    private  int totalDeaths;
+    private  int totalWins;
+    private  int totalLose;
 
     public int getTotalChampionKills() {
         return totalChampionKills;
     }
-
     public void setTotalChampionKills(int totalChampionKills) {
         this.totalChampionKills = totalChampionKills;
     }
 
     public int getTotalAssists() { return totalAssists; }
-
     public void setTotalAssists(int totalAssists) {
         this.totalAssists = totalAssists;
     }
 
 
     public int getTotalFarm(){return totalFarm;}
-
     public void setTotalFarm(int totalFarm){
         this.totalFarm=totalFarm;
     }
 
+
+    public int getTotalDeaths(){return totalDeaths;}
+    public void setTotalDeaths(int totalDeaths){
+        this.totalDeaths=totalDeaths;
+    }
+
+    public int getTotalWins(){return totalWins;}
+    public void setTotalWins(int totalWins)
+    {
+        this.totalWins=totalWins;
+    }
+
+    public int getTotalLost(){return totalLose;}
+    public void setTotalLost(int totalLose)
+    {
+        this.totalLose=totalLose;
+    }
 
 }

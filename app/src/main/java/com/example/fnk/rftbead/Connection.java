@@ -112,9 +112,9 @@ public class Connection  extends AsyncTask<String, Void, String> {
                 }
                 case "getgamedatasummary":
                 {
-                    //Intent i = new Intent(context,SummaryStat.class);
-                  //  i.putExtra("result",result);
-                  //  context.startActivity(i);
+                    Intent i = new Intent(context,SummaryStatActivity.class);
+                    i.putExtra("result",result);
+                    context.startActivity(i);
                     break;
                 }
             }

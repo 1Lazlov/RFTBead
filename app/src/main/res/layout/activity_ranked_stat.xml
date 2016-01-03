@@ -4,19 +4,22 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.fnk.rftbead.RankedStat">
+    tools:context="com.example.fnk.rftbead.RankedStat"
+    android:background="@drawable/lolappbg">
 
     <TextView android:text="Total kill: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/kills"/>
+        android:id="@+id/kills"
+        android:textColor="#ffffff" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/assits"
         android:text="Total assist: "
-        android:layout_below="@+id/kills"/>
+        android:layout_below="@+id/kills"
+        android:textColor="#ffffff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,6 +27,36 @@
         android:text="Total minion kill: "
         android:layout_below="@id/assits"
         android:id="@+id/farm"
-        />
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total deaths: "
+        android:layout_below="@id/farm"
+        android:id="@+id/deaths"
+        android:textColor="#ffffff" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wins: "
+        android:layout_below="@id/deaths"
+        android:id="@+id/win"
+        android:textColor="#ffffff" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loses: "
+        android:layout_below="@id/win"
+        android:id="@+id/lose"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Games: "
+        android:layout_below="@id/lose"
+        android:id="@+id/match"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>
