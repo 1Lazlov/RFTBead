@@ -1,5 +1,4 @@
 # RFTBead
-Test
 
 <h2>Images</h2>
 
