@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RFTBead</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="region">
+        <item>EUNE</item>
+        <item>EUW</item>
+        <item>NA</item>
+        <item>BR</item>
+        <item>TR</item>
+    </string-array>
+    <string name="title_activity_page2">Page2</string>
+    <string name="title_activity_ranked_stat">RankedStat</string>
+</resources>
