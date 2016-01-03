@@ -1,5 +1,0 @@
-# RFTBead
-Test
-
-Donate
-
