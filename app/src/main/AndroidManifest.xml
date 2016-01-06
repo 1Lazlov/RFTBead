@@ -21,15 +21,29 @@
         </activity>
         <activity
             android:name=".Page2"
-            android:label="@string/title_activity_page2" >
+            android:label="Menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fnk.rftbead.MainActivity"
+                />
         </activity>
+
         <activity
             android:name=".RankedStat"
-            android:label="@string/title_activity_ranked_stat" >
+            android:label="@string/title_activity_ranked_stat"
+            android:parentActivityName="com.example.fnk.rftbead.Page2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fnk.rftbead.Page2"
+                />
         </activity>
         <activity
             android:name=".SummaryStatActivity"
             android:label="@string/title_activity_summary_stat" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fnk.rftbead.Page2"
+                />
         </activity>
     </application>
 
