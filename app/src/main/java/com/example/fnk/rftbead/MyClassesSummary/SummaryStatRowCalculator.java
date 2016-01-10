@@ -27,4 +27,34 @@ public class SummaryStatRowCalculator {
         return sum;
     }
 
+    public int getAssists(List<SummaryStatRow> list)
+    {
+        int sum=0;
+        for(SummaryStatRow item:list)
+        {
+            sum+=item.getAssists();
+        }
+        return sum;
+    }
+
+    public int getTurrets(List<SummaryStatRow> list)
+    {
+        int sum=0;
+        for(SummaryStatRow item:list)
+        {
+            sum+=item.getTurrets();
+        }
+        return sum;
+    }
+
+    public int getFarm(List<SummaryStatRow> list)
+    {
+        int sum=0;
+        for(SummaryStatRow item:list)
+        {
+            sum+=item.getFarm();
+        }
+        return sum;
+    }
+
 }

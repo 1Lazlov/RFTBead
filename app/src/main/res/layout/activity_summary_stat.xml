@@ -17,13 +17,42 @@
         android:layout_alignParentStart="true"
         />
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Assists: "
+        android:id="@+id/nassists"
+        android:layout_below="@id/kills"/>
+
     <TextView
         android:text="Wins: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/wins"
         android:textColor="#ffffff"
-        android:layout_below="@id/kills"
+        android:layout_below="@id/nassists"
         />
+
+
+
+    <TextView
+        android:text="Turrets destroyed: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/turrets"
+        android:textColor="#ffffff"
+        android:layout_below="@id/wins"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:id="@+id/nfarm"
+        android:text="Total farm: "
+        android:layout_below="@id/turrets"/>
+
 
 </RelativeLayout>

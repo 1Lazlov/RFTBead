@@ -22,7 +22,7 @@ public class SummaryStatActivity extends AppCompatActivity {
 
 
 
-    TextView Kills, Wins;
+    TextView Kills, Wins, Turrets, Farm, Assist;
 
     private String resultString;
 
@@ -42,14 +42,22 @@ public class SummaryStatActivity extends AppCompatActivity {
 
         int totalKill = calculator.getAllChampionKill(allRow);
         int totalWin=calculator.getWins(allRow);
+        int totalAssists=calculator.getAssists(allRow);
+        int totalTurrets=calculator.getTurrets(allRow);
+        int totalFarm=calculator.getFarm(allRow);
+
 
         Kills = (TextView) findViewById(R.id.kills);
         Wins=(TextView) findViewById(R.id.wins);
-
+        Assist=(TextView) findViewById(R.id.nassists);
+        Turrets=(TextView) findViewById(R.id.turrets);
+        Farm=(TextView) findViewById(R.id.nfarm);
 
         Kills.append(""+totalKill);
         Wins.append(""+totalWin);
-
+        Assist.append(""+totalAssists);
+        Turrets.append(""+totalTurrets);
+        Farm.append(""+totalFarm);
 
     }
 
@@ -85,17 +93,22 @@ public class SummaryStatActivity extends AppCompatActivity {
             jsonObject = new JSONObject(jsonstring);
             JSONArray playerStatSummaries = jsonObject.getJSONArray("playerStatSummaries");
 
-            JSONObject champData = playerStatSummaries.getJSONObject(playerStatSummaries.length()-1);
+            JSONObject champData = playerStatSummaries.getJSONObject(playerStatSummaries.length() - 1);
             JSONObject aggregatedStats = champData.getJSONObject("aggregatedStats");
 
             int totalWins=champData.getInt("wins");
             int totalKills = aggregatedStats.getInt("totalChampionKills");
-
+            int totalAssists=aggregatedStats.getInt("totalAssists");
+            int totalTurrets=aggregatedStats.getInt("totalTurretsKilled");
+            int totalFarm=aggregatedStats.getInt("totalMinionKills");
 
             SummaryStatRow summaryStat = new SummaryStatRow();
 
             summaryStat.setTotalChampionKills(totalKills);
             summaryStat.setWins(totalWins);
+            summaryStat.setAssists(totalAssists);
+            summaryStat.setTurrets(totalTurrets);
+            summaryStat.setFarm(totalFarm);
 
             statsList.add(summaryStat);
 
