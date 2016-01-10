@@ -1,5 +1,6 @@
 # RFTBead
 
+Ez a Rendszerfejleszstés technológia tárgyra készített beadandó programom. A program a népszerű League of Legends nevű online játék <a href="https://developer.riotgames.com">hivatalos api-ját</a> használja. A program segítségével lekérhetjük a játékosok felhaználói neve ismeretében a statisztikáikat. Külön opció van a rangsorolt és a normál mérkőzések számára.
 <h2>Images</h2>
 
 <img src="http://i.imgur.com/bAhrSVb.jpg"/>
