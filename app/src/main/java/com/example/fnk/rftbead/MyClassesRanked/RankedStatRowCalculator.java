@@ -86,4 +86,6 @@ public class RankedStatRowCalculator
         return w+l;
     }
 
+
+
 }

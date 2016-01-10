@@ -54,10 +54,10 @@ public class RankedStat extends AppCompatActivity {
         Lose=(TextView) findViewById(R.id.lose);
         Match=(TextView) findViewById(R.id.match);
 
-        Kills.append(""+totalKill);
-        Assits.append(""+totalAssist);
-        Farm.append("" + totalFarm);
-        Deaths.append(""+totalDeath);
+        Kills.append(""+totalKill+"  |  "+totalKill/totalMatch+"K/G");
+        Assits.append(""+totalAssist+"  |  "+totalAssist/totalMatch+"A/G");
+        Farm.append("" + totalFarm+"  |  "+totalFarm/totalMatch+"F/G");
+        Deaths.append(""+totalDeath+"  |  "+totalDeath/totalMatch+"D/G");
         Win.append(""+totalWin);
         Lose.append(""+totalLose);
         Match.append(""+totalMatch);

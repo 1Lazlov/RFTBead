@@ -7,7 +7,7 @@
 
 
     <TextView
-        android:text="Total kill: "
+        android:text="Kills: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/kills"
@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        />
+        android:textSize="24dp" />
 
 
     <TextView
@@ -24,7 +24,8 @@
         android:textColor="#ffffff"
         android:text="Assists: "
         android:id="@+id/nassists"
-        android:layout_below="@id/kills"/>
+        android:layout_below="@id/kills"
+        android:textSize="24dp" />
 
     <TextView
         android:text="Wins: "
@@ -33,7 +34,7 @@
         android:id="@+id/wins"
         android:textColor="#ffffff"
         android:layout_below="@id/nassists"
-        />
+        android:textSize="24dp" />
 
 
 
@@ -44,15 +45,16 @@
         android:id="@+id/turrets"
         android:textColor="#ffffff"
         android:layout_below="@id/wins"
-        />
+        android:textSize="24dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
         android:id="@+id/nfarm"
-        android:text="Total farm: "
-        android:layout_below="@id/turrets"/>
+        android:text="Farm: "
+        android:layout_below="@id/turrets"
+        android:textSize="24dp" />
 
 
 </RelativeLayout>
