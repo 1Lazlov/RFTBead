@@ -102,6 +102,9 @@ public class RankedStat extends AppCompatActivity {
             JSONArray champions = jsonObject.getJSONArray("champions");
             for(int i = 0; i < champions.length()-1;i++)
             {
+                //azért megy csak -1 -ig, mert a legutolsó , az id:0-s az összesített statisztikákat tárolja.
+                //https://eune.api.pvp.net/api/lol/eune/v1.3/stats/by-summoner/38521350/ranked?season=SEASON2015&api_key=dfa1a4ba-09c0-4200-80d5-6f42a4fc7fd9
+
                 JSONObject champData = champions.getJSONObject(i);
                 JSONObject stats = champData.getJSONObject("stats");
 
@@ -113,7 +116,8 @@ public class RankedStat extends AppCompatActivity {
                 int totalSessionWon=stats.getInt("totalSessionsWon");
                 int totalSessionLost=stats.getInt("totalSessionsLost");
 
-                Log.d("MYLOGGER", "champid: " + championID + "  totalassziszt:" + totalAssists + " totalgyilok" + totalChampionKills + " totalfarm" + totalMinonKills + " totalhalal" + totalDeaths);
+                Log.d("MYLOGGER", "champid: " + championID + "  totalassziszt:" + totalAssists + " totalgyilok" + totalChampionKills +
+                        " totalfarm" + totalMinonKills + " totalhalal" + totalDeaths + " totalgyozelem"+totalSessionWon+" totalvereseg"+totalSessionLost);
 
                 RankedStatRow rankedStat = new RankedStatRow();
                 rankedStat.setTotalAssists(totalAssists);

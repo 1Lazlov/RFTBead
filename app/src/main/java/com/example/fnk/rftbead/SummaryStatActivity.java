@@ -93,7 +93,9 @@ public class SummaryStatActivity extends AppCompatActivity {
             jsonObject = new JSONObject(jsonstring);
             JSONArray playerStatSummaries = jsonObject.getJSONArray("playerStatSummaries");
 
-            JSONObject champData = playerStatSummaries.getJSONObject(playerStatSummaries.length() - 1);
+            //nem kell itt for ciklus, mert csak a legutolsó elem adataira vagyunk kíváncsiak. Ezek tárolják a normal adatokat.
+            //https://eune.api.pvp.net/api/lol/eune/v1.3/stats/by-summoner/38521350/summary?season=SEASON2015&api_key=dfa1a4ba-09c0-4200-80d5-6f42a4fc7fd9
+            JSONObject champData = playerStatSummaries.getJSONObject(playerStatSummaries.length() -1);
             JSONObject aggregatedStats = champData.getJSONObject("aggregatedStats");
 
             int totalWins=champData.getInt("wins");
@@ -101,6 +103,11 @@ public class SummaryStatActivity extends AppCompatActivity {
             int totalAssists=aggregatedStats.getInt("totalAssists");
             int totalTurrets=aggregatedStats.getInt("totalTurretsKilled");
             int totalFarm=aggregatedStats.getInt("totalMinionKills");
+
+            Log.d("MYLOGGER", "totalgyozelem: "+totalWins+" totalgyilkossag: "+totalKills+"  totalassziszt:" + totalAssists +
+                    " totalfarm: " + totalFarm +"totaltorony: "+totalTurrets);
+
+
 
             SummaryStatRow summaryStat = new SummaryStatRow();
 
